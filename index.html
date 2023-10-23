@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iraj-Chowdhury </title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <title>Iraj-Chowdhury</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
@@ -12,288 +12,342 @@
     />
   </head>
   <body>
-    <main class="  mx-5	my-40	 lg:mx-[50rem]  lg:my-[20rem] ">
-      <div
-        class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+    <!-- header content and style  -->
+    <header id="home">
+      <!-- navbar all code  -->
+
+      <nav
+        class="bg-white dark:bg-gray-900 border border-dashed border-green-500 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
       >
-        <div class="flex justify-end px-4 pt-4">
-          <button
-            id="dropdownButton"
-            data-dropdown-toggle="dropdown"
-            class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5"
-            type="button"
-          >
-            <span class="sr-only">Open dropdown</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 16 3"
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="index.html" class="flex items-center">
+            <img src="./img/logo.jpg" class="h-8" alt="Flowbite Logo" />
+            <span
+              class="self-center text-base lg:text-2xl text-emerald-500 font-semibold whitespace-nowrap dark:text-white"
+              >Iraj<span class="text-black">Chowdhury</span></span
             >
-              <path
-                d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"
-              />
-            </svg>
-          </button>
-          <!-- Dropdown menu -->
+          </a>
+          <div class="flex md:order-2">
+            <button
+              type="button"
+              class="text-white bg-emerald-500 hover:bg-emerald-300  focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-emerald-500 dark:focus:ring-emerald-300"
+            >
+            <a href="tel:+8801758585294">Call Me</a>
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
           <div
-            id="dropdown"
-            class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
           >
-            <ul class="py-2" aria-labelledby="dropdownButton">
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
               <li>
                 <a
-                  href="https://www.linkedin.com/in/iraj-chowdhury-b1281b263/"
-                  target="_blank"
-                  class="block 	 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  href="#home"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-emerald-500 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  aria-current="page"
+                  >Home</a
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    enable-background="new 0 0 100 100"
-                    viewBox="0 0 100 100"
-                    id="linkedin"
-                    class="w-8"
-                  >
-                    <path
-                      fill="#0077b5"
-                      d="M90.479,2.513c-14.611-0.041-68.502,0.028-80.958,0C5.645,2.513,2.5,5.562,2.5,9.317v81.381
-                        c0,3.756,3.145,6.802,7.021,6.802h80.958c3.878,0,7.021-3.046,7.021-6.803V9.317C97.5,5.562,94.357,2.513,90.479,2.513z"
-                    ></path>
-                    <path
-                      fill="#f1f1f1"
-                      d="M53.453 82.005c0 0 0-23.878 0-23.879-.139-4.388 2.484-8.483 7.762-8.667 5.143 0 7.201 3.921 7.201 9.67v22.875h14.214V57.485c0-13.135-7.012-19.247-16.365-19.247-7.668 0-11.036 4.285-12.907 7.204l.095-6.2H39.239c.185 4.012-.001 42.763-.001 42.763L53.453 82.005zM31.37 63.461v-24.22H17.154v42.763h14.217C31.368 77.514 31.376 67.888 31.37 63.461zM24.265 33.404c4.956 0 8.042-3.284 8.042-7.387-.041-9.897-16.004-9.787-15.991-.001C16.305 30.151 19.476 33.455 24.265 33.404z"
-                    ></path>
-                  </svg>
-                </a>
               </li>
               <li>
                 <a
-                  href="https://www.youtube.com/channel/UCEHmnXU8NTzZI7x1j7US1yw"
-                  target="_blank"
-                  class="block 	 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  href="#about"
+                  class="block py-2 pl-3  pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-emerald-500 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >About</a
                 >
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8
-                " viewBox="0 0 16 16" id="youtube"><g fill-rule="evenodd" clip-rule="evenodd"><path fill="#F44336" d="M15.32 4.06c-.434-.772-.905-.914-1.864-.968C12.498 3.027 10.089 3 8.002 3c-2.091 0-4.501.027-5.458.091-.957.055-1.429.196-1.867.969C.23 4.831 0 6.159 0 8.497v.008c0 2.328.23 3.666.677 4.429.438.772.909.912 1.866.977.958.056 3.368.089 5.459.089 2.087 0 4.496-.033 5.455-.088.959-.065 1.43-.205 1.864-.977.451-.763.679-2.101.679-4.429v-.008c0-2.339-.228-3.667-.68-4.438z"></path><path fill="#FAFAFA" d="M6 11.5v-6l5 3z"></path></g></svg>
-                    <path
-                      fill="#0077b5"
-                      d="M90.479,2.513c-14.611-0.041-68.502,0.028-80.958,0C5.645,2.513,2.5,5.562,2.5,9.317v81.381
-                        c0,3.756,3.145,6.802,7.021,6.802h80.958c3.878,0,7.021-3.046,7.021-6.803V9.317C97.5,5.562,94.357,2.513,90.479,2.513z"
-                    ></path>
-                    <path
-                      fill="#f1f1f1"
-                      d="M53.453 82.005c0 0 0-23.878 0-23.879-.139-4.388 2.484-8.483 7.762-8.667 5.143 0 7.201 3.921 7.201 9.67v22.875h14.214V57.485c0-13.135-7.012-19.247-16.365-19.247-7.668 0-11.036 4.285-12.907 7.204l.095-6.2H39.239c.185 4.012-.001 42.763-.001 42.763L53.453 82.005zM31.37 63.461v-24.22H17.154v42.763h14.217C31.368 77.514 31.376 67.888 31.37 63.461zM24.265 33.404c4.956 0 8.042-3.284 8.042-7.387-.041-9.897-16.004-9.787-15.991-.001C16.305 30.151 19.476 33.455 24.265 33.404z"
-                    ></path>
-                  </svg>
-                </a>
               </li>
               <li>
                 <a
-                  href="https://instagram.com/iraj_chowdhury?igshid=OGY3MTU3OGY1Mw==
-                  "
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                 >
-                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8" viewBox="0 0 102 102" id="instagram"><defs><radialGradient id="a" cx="6.601" cy="99.766" r="129.502" gradientUnits="userSpaceOnUse"><stop offset=".09" stop-color="#fa8f21"></stop><stop offset=".78" stop-color="#d82d7e"></stop></radialGradient><radialGradient id="b" cx="70.652" cy="96.49" r="113.963" gradientUnits="userSpaceOnUse"><stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"></stop><stop offset="1" stop-color="#8c3aaa"></stop></radialGradient></defs><path fill="url(#a)" d="M25.865,101.639A34.341,34.341,0,0,1,14.312,99.5a19.329,19.329,0,0,1-7.154-4.653A19.181,19.181,0,0,1,2.5,87.694,34.341,34.341,0,0,1,.364,76.142C.061,69.584,0,67.617,0,51s.067-18.577.361-25.14A34.534,34.534,0,0,1,2.5,14.312,19.4,19.4,0,0,1,7.154,7.154,19.206,19.206,0,0,1,14.309,2.5,34.341,34.341,0,0,1,25.862.361C32.422.061,34.392,0,51,0s18.577.067,25.14.361A34.534,34.534,0,0,1,87.691,2.5a19.254,19.254,0,0,1,7.154,4.653A19.267,19.267,0,0,1,99.5,14.309a34.341,34.341,0,0,1,2.14,11.553c.3,6.563.361,8.528.361,25.14s-.061,18.577-.361,25.14A34.5,34.5,0,0,1,99.5,87.694,20.6,20.6,0,0,1,87.691,99.5a34.342,34.342,0,0,1-11.553,2.14c-6.557.3-8.528.361-25.14.361s-18.577-.058-25.134-.361" data-name="Path 16"></path><path fill="url(#b)" d="M25.865,101.639A34.341,34.341,0,0,1,14.312,99.5a19.329,19.329,0,0,1-7.154-4.653A19.181,19.181,0,0,1,2.5,87.694,34.341,34.341,0,0,1,.364,76.142C.061,69.584,0,67.617,0,51s.067-18.577.361-25.14A34.534,34.534,0,0,1,2.5,14.312,19.4,19.4,0,0,1,7.154,7.154,19.206,19.206,0,0,1,14.309,2.5,34.341,34.341,0,0,1,25.862.361C32.422.061,34.392,0,51,0s18.577.067,25.14.361A34.534,34.534,0,0,1,87.691,2.5a19.254,19.254,0,0,1,7.154,4.653A19.267,19.267,0,0,1,99.5,14.309a34.341,34.341,0,0,1,2.14,11.553c.3,6.563.361,8.528.361,25.14s-.061,18.577-.361,25.14A34.5,34.5,0,0,1,99.5,87.694,20.6,20.6,0,0,1,87.691,99.5a34.342,34.342,0,0,1-11.553,2.14c-6.557.3-8.528.361-25.14.361s-18.577-.058-25.134-.361" data-name="Path 17"></path><path fill="#fff" d="M461.114,477.413a12.631,12.631,0,1,1,12.629,12.632,12.631,12.631,0,0,1-12.629-12.632m-6.829,0a19.458,19.458,0,1,0,19.458-19.458,19.457,19.457,0,0,0-19.458,19.458m35.139-20.229a4.547,4.547,0,1,0,4.549-4.545h0a4.549,4.549,0,0,0-4.547,4.545m-30.99,51.074a20.943,20.943,0,0,1-7.037-1.3,12.547,12.547,0,0,1-7.193-7.19,20.923,20.923,0,0,1-1.3-7.037c-.184-3.994-.22-5.194-.22-15.313s.04-11.316.22-15.314a21.082,21.082,0,0,1,1.3-7.037,12.54,12.54,0,0,1,7.193-7.193,20.924,20.924,0,0,1,7.037-1.3c3.994-.184,5.194-.22,15.309-.22s11.316.039,15.314.221a21.082,21.082,0,0,1,7.037,1.3,12.541,12.541,0,0,1,7.193,7.193,20.926,20.926,0,0,1,1.3,7.037c.184,4,.22,5.194.22,15.314s-.037,11.316-.22,15.314a21.023,21.023,0,0,1-1.3,7.037,12.547,12.547,0,0,1-7.193,7.19,20.925,20.925,0,0,1-7.037,1.3c-3.994.184-5.194.22-15.314.22s-11.316-.037-15.309-.22m-.314-68.509a27.786,27.786,0,0,0-9.2,1.76,19.373,19.373,0,0,0-11.083,11.083,27.794,27.794,0,0,0-1.76,9.2c-.187,4.04-.229,5.332-.229,15.623s.043,11.582.229,15.623a27.793,27.793,0,0,0,1.76,9.2,19.374,19.374,0,0,0,11.083,11.083,27.813,27.813,0,0,0,9.2,1.76c4.042.184,5.332.229,15.623.229s11.582-.043,15.623-.229a27.8,27.8,0,0,0,9.2-1.76,19.374,19.374,0,0,0,11.083-11.083,27.716,27.716,0,0,0,1.76-9.2c.184-4.043.226-5.332.226-15.623s-.043-11.582-.226-15.623a27.786,27.786,0,0,0-1.76-9.2,19.379,19.379,0,0,0-11.08-11.083,27.748,27.748,0,0,0-9.2-1.76c-4.041-.185-5.332-.229-15.621-.229s-11.583.043-15.626.229" data-name="Path 18" transform="translate(-422.637 -426.196)"></path></svg>
-                    <path
-                      fill="#9EDCF2"
-                      d="M200.9 199.8c0 13.9-32.2 25.1-71.9 25.1s-71.9-11.3-71.9-25.1c0-13.9 32.2-25.1 71.9-25.1s71.9 11.2 71.9 25.1zm0 0"
-                    ></path>
-                    <defs>
-                      <path
-                        id="a"
-                        d="M98.1 244.8c1.6 7.5 5.5 11.9 9.4 14.5h41.1c5-3.4 10.1-9.8 10.1-21.8v-31s.6-7.7 7.7-10.2c0 0 4.1-2.9-.3-4.5 0 0-19.5-1.6-19.5 14.4v23.6s.8 8.7-3.8 12.3v-29.2s.3-9.3 5.1-12.8c0 0 3.2-5.7-3.8-4.2 0 0-13.4 1.9-14 17.6l-.3 30h-3.2l-.3-30c-.6-15.6-14-17.6-14-17.6-7-1.6-3.8 4.2-3.8 4.2 4.8 3.5 5.1 12.8 5.1 12.8v29.5c-4.6-3.3-3.8-12.6-3.8-12.6v-23.6c0-16-19.5-14.4-19.5-14.4-4.5 1.6-.3 4.5-.3 4.5 7 2.6 7.7 10.2 7.7 10.2v21.7l.4 16.6z"
-                      ></path>
-                    </defs>
-                    <clipPath id="b">
-                      <use overflow="visible" xlink:href="#a"></use>
-                    </clipPath>
-                    <path
-                      fill="#7DBCE7"
-                      d="M200.9 199.8c0 13.9-32.2 25.1-71.9 25.1s-71.9-11.3-71.9-25.1c0-13.9 32.2-25.1 71.9-25.1s71.9 11.2 71.9 25.1zm0 0"
-                      clip-path="url(#b)"
-                    ></path>
-                    <path
-                      fill="#9EDCF2"
-                      d="M46.9 125.9l-2.1 7.2s-.5 2.6 1.9 3.1c2.6-.1 2.4-2.5 2.2-3.2l-2-7.1zm0 0"
-                    ></path>
-                    <path
-                      fill="#010101"
-                      d="M255.8 95.6l.2-.9c-21.1-4.2-42.7-4.3-55.8-3.7 2.1-7.7 2.8-16.7 2.8-26.6 0-14.3-5.4-25.7-14-34.3 1.5-4.9 3.5-15.8-2-29.7 0 0-9.8-3.1-32.1 11.8-8.7-2.2-18-3.3-27.3-3.3-10.2 0-20.5 1.3-30.2 3.9C74.4-2.9 64.3.3 64.3.3c-6.6 16.5-2.5 28.8-1.3 31.8-7.8 8.4-12.5 19.1-12.5 32.2 0 9.9 1.1 18.8 3.9 26.5-13.2-.5-34-.3-54.4 3.8l.2.9c20.4-4.1 41.4-4.2 54.5-3.7.6 1.6 1.3 3.2 2 4.7-13 .4-35.1 2.1-56.3 8.1l.3.9c21.4-6 43.7-7.6 56.6-8 7.8 14.4 23 23.8 50.2 26.7-3.9 2.6-7.8 7-9.4 14.5-5.3 2.5-21.9 8.7-31.9-8.5 0 0-5.6-10.2-16.3-11 0 0-10.4-.2-.7 6.5 0 0 6.9 3.3 11.7 15.6 0 0 6.3 21 36.4 14.2V177s-.6 7.7-7.7 10.2c0 0-4.2 2.9.3 4.5 0 0 19.5 1.6 19.5-14.4v-23.6s-.8-9.4 3.8-12.6v38.8s-.3 9.3-5.1 12.8c0 0-3.2 5.7 3.8 4.2 0 0 13.4-1.9 14-17.6l.3-39.3h3.2l.3 39.3c.6 15.6 14 17.6 14 17.6 7 1.6 3.8-4.2 3.8-4.2-4.8-3.5-5.1-12.8-5.1-12.8v-38.5c4.6 3.6 3.8 12.3 3.8 12.3v23.6c0 16 19.5 14.4 19.5 14.4 4.5-1.6.3-4.5.3-4.5-7-2.6-7.7-10.2-7.7-10.2v-31c0-12.1-5.1-18.5-10.1-21.8 29-2.9 42.9-12.2 49.3-26.8 12.7.3 35.6 1.9 57.4 8.1l.3-.9c-21.7-6.1-44.4-7.7-57.3-8.1.6-1.5 1.1-3 1.6-4.6 13.4-.5 35.1-.5 56.3 3.7zm0 0"
-                    ></path>
-                    <path
-                      fill="#F5CCB3"
-                      d="M174.6 63.7c6.2 5.7 9.9 12.5 9.9 19.8 0 34.4-25.6 35.3-57.2 35.3S70.1 114 70.1 83.5c0-7.3 3.6-14.1 9.8-19.7 10.3-9.4 27.7-4.4 47.4-4.4s37-5.1 47.3 4.3zm0 0"
-                    ></path>
-                    <path
-                      fill="#FFF"
-                      d="M108.3 85.3c0 9.5-5.3 17.1-11.9 17.1-6.6 0-11.9-7.7-11.9-17.1 0-9.5 5.3-17.1 11.9-17.1 6.6-.1 11.9 7.6 11.9 17.1zm0 0"
-                    ></path>
-                    <path
-                      fill="#AF5C51"
-                      d="M104.5 85.5c0 6.3-3.6 11.4-7.9 11.4-4.4 0-7.9-5.1-7.9-11.4 0-6.3 3.6-11.4 7.9-11.4 4.3 0 7.9 5.1 7.9 11.4zm0 0"
-                    ></path>
-                    <path
-                      fill="#FFF"
-                      d="M172.2 85.3c0 9.5-5.3 17.1-11.9 17.1-6.6 0-11.9-7.7-11.9-17.1 0-9.5 5.3-17.1 11.9-17.1 6.5-.1 11.9 7.6 11.9 17.1zm0 0"
-                    ></path>
-                    <path
-                      fill="#AF5C51"
-                      d="M168.3 85.5c0 6.3-3.6 11.4-7.9 11.4-4.4 0-7.9-5.1-7.9-11.4 0-6.3 3.6-11.4 7.9-11.4 4.4 0 7.9 5.1 7.9 11.4zm0 0M130.5 100.5c0 1.6-1.3 3-3 3-1.6 0-3-1.3-3-3s1.3-3 3-3c1.6 0 3 1.3 3 3zm0 0M120.6 108c-.2-.5.1-1 .6-1.2.5-.2 1 .1 1.2.6.8 2.2 2.8 3.6 5.1 3.6s4.3-1.5 5.1-3.6c.2-.5.7-.8 1.2-.6.5.2.8.7.6 1.2-1 2.9-3.8 4.9-6.9 4.9-3.1 0-5.9-2-6.9-4.9zm0 0"
-                    ></path>
-                    <path
-                      fill="#C4E5D9"
-                      d="M54.5 121.6c0 .8-.9 1.4-2.1 1.4-1.1 0-2.1-.6-2.1-1.4 0-.8.9-1.4 2.1-1.4 1.2 0 2.1.6 2.1 1.4zm0 0M60.3 124.8c0 .8-.9 1.4-2.1 1.4-1.1 0-2.1-.6-2.1-1.4 0-.8.9-1.4 2.1-1.4 1.2 0 2.1.6 2.1 1.4zm0 0M63.8 129c0 .8-.9 1.4-2.1 1.4-1.1 0-2.1-.6-2.1-1.4 0-.8.9-1.4 2.1-1.4 1.2-.1 2.1.6 2.1 1.4zm0 0M67 133.8c0 .8-.9 1.4-2.1 1.4-1.1 0-2.1-.6-2.1-1.4 0-.8.9-1.4 2.1-1.4 1.2-.1 2.1.6 2.1 1.4zm0 0M70.5 138.2c0 .8-.9 1.4-2.1 1.4-1.1 0-2.1-.6-2.1-1.4 0-.8.9-1.4 2.1-1.4 1.2 0 2.1.6 2.1 1.4zm0 0M75.3 142.1c0 .8-.9 1.4-2.1 1.4-1.1 0-2.1-.6-2.1-1.4 0-.8.9-1.4 2.1-1.4 1.2-.1 2.1.6 2.1 1.4zm0 0M82 144.6c0 .8-.9 1.4-2.1 1.4-1.1 0-2.1-.6-2.1-1.4 0-.8.9-1.4 2.1-1.4 1.2 0 2.1.6 2.1 1.4zm0 0M88.7 144.6c0 .8-.9 1.4-2.1 1.4-1.1 0-2.1-.6-2.1-1.4 0-.8.9-1.4 2.1-1.4 1.2 0 2.1.6 2.1 1.4zm0 0M95.5 143.5c0 .8-.9 1.4-2.1 1.4-1.1 0-2.1-.6-2.1-1.4 0-.8.9-1.4 2.1-1.4 1.1 0 2.1.6 2.1 1.4zm0 0"
-                    ></path>
-                  </svg>
-                </a>
+                  href="#contact"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-emerald-500 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
         </div>
-        <div class="flex flex-col items-center pb-10">
+      </nav>
+      <section
+        class="lg:h-[100vh] flex flex-col-reverse md:flex-row md:px-[5rem] lg:flex-row my-[34%] lg:my-[0] lg:justify-evenly lg:items-center"
+      >
+        <div class="mx-[1rem] my-[8rem]">
+          <h1 class="text-center text-4xl">
+            Hi,I'm <span class="auto-type text-emerald-500"></span>
+          </h1>
+        </div>
+        <div>
           <img
-            class="w-24 h-24 mb-3 rounded-full shadow-lg"
-            src="./received_954011785599998.jpeg"
-            alt="iraj-chowdhury
-            "
+            class="mx-[18%] rounded-lg shadow-xl dark:shadow-gray-800"
+            src="./img/1694721178747-removebg-preview.png"
+            alt=""
           />
-          <h4 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-            Iraj-Chowdhury
-          </h4>
-          <span class="text-sm text-gray-500 dark:text-gray-400"
-            >Karate Instructor  </span
-          >
-          <div class="flex mt-4 space-x-3 md:mt-6">
+        </div>
+      </section>
+    </header><hr>
+
+    <!-- all main content and style  -->
+    <main  class="  m-[30px] md:m-[30px] lg:my-[5%] lg:mx-[10%] ">
+     <section id="about">
+       <!-- about section  -->
+       <section class="flex lg:m-[40px] flex-col lg:flex-row items-center justify-between">
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="./img/8.jpg" alt="">
+        </div>
+        <div class="text-center sm:mt-[25px] lg:mt-[20px]">
+          <h1 class="text-[20px]  lg:text-2xl" >Introducing <span class="font-bold	text-emerald-500 decoration-double">Iraj Chowdhury</span> ,  <br> a multifaceted individual embodying  a unique combination <br> of characteristics that make them stand out.</h1>
+
+          <div class="mx-[80px] my-[12px] lg:mx-[35%] lg:my-[10px]">
+                        <!-- Modal toggle -->
+                        <button data-modal-target="staticModal" data-modal-toggle="staticModal" class="text-white bg-emerald-500 hover:bg-emerald-300  focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-emerald-500 dark:focus:ring-emerald-300" type="button">
+                          About Me More...
+                      </button>
+                      
+                      <!-- Main modal -->
+                      <div id="staticModal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                          <div class="relative w-full max-w-2xl max-h-full">
+                              <!-- Modal content -->
+                              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                  <!-- Modal header -->
+                                  <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                      <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                          Iraj-Chowdhury
             
-            <!-- Modal toggle -->
-            <button data-modal-target="staticModal" data-modal-toggle="staticModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
-                About Me
-            </button>
+                                      </h3>
+                                      <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="staticModal">
+                                          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                          </svg>
+                                          <span class="sr-only">Close modal</span>
+                                      </button>
+                                  </div>
+                                  <!-- Modal body -->
+                                  <div class="p-6 space-y-6">
+                                      <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                          Introducing Iraj Chowdhury, a multifaceted individual embodying a unique combination of characteristics that make them stand out. As a Mumin, their faith roots them deeply in values of integrity, honesty, and compassion, guiding every action with honor. Iraj Chowdhury is a business-minded individual with a keen eye for identifying opportunities, creating value, and driving results. Their passion for entrepreneurship fuels their ability to identify and solve problems for the benefit of all. Strategic thinking and execution are their forte, delivering tangible outcomes.
             
-            <!-- Main modal -->
-            <div id="staticModal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-2xl max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                        <!-- Modal header -->
-                        <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                Iraj-Chowdhury
-
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="staticModal">
-                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                                </svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                Introducing Iraj Chowdhury, a multifaceted individual embodying a unique combination of characteristics that make them stand out. As a Mumin, their faith roots them deeply in values of integrity, honesty, and compassion, guiding every action with honor. Iraj Chowdhury is a business-minded individual with a keen eye for identifying opportunities, creating value, and driving results. Their passion for entrepreneurship fuels their ability to identify and solve problems for the benefit of all. Strategic thinking and execution are their forte, delivering tangible outcomes.
-
-                                
-                            </p>
-                            <img src="./1694720316509.jpg" alt="">
-                            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                In the world of martial arts, Iraj Chowdhury is a true martial artist mastering three distinct karate styles: Fighter karate, Sito ryu, and Wadokai. Their journey in martial arts has been enriched by completing the Coach seminar under the esteemed guidance of Nepali grandmaster T.S. Rai, earning a Blackbelt from the Bangladesh Karate Federation, and excelling as a kumite instructor. They have also participated in Karate Referee and Judge seminars under the Bangladesh Karate Federation.
-
-                                
-                            </p>
-                            <img src="./1694721148750.jpg" alt="">
-                            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                With six years of dedicated involvement in the karate world, Iraj Chowdhury has achieved significant success. Their approach to training reflects the importance of discipline, hard work, and dedication. Their skills in self-defense instill confidence, focus, and mental clarity, which they use to help others achieve their goals.
-
-                                
-                            </p>
-                            <img src="./1694721178747.jpg" alt="">
-                            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                As a fitness trainer, Iraj Chowdhury understands the vital role of physical fitness in a healthy lifestyle. Using their knowledge and expertise, they create personalized fitness plans tailored to each client's unique needs and abilities.
-
-                                
-                            </p>
-                            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                Furthermore, Iraj Chowdhury is a natural leader who inspires and motivates others to be their best selves, leading by example. Their contagious work ethic and dedication create a positive influence. Their unique storytelling and listening skills foster meaningful relationships.
-
-                                
-                            </p>
-                            
-                            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                In summary, Iraj Chowdhury is a multifaceted individual with a unique set of skills and qualities that set them apart. They are a Mumin, a business-minded entrepreneur, and a highly skilled martial artist mastering three distinct karate styles. Their dedication to continuous learning and improvement is evident through their various achievements, including their role as a kumite instructor. If you seek someone to help you achieve your goals and embody excellence in various domains, look no further than Iraj Chowdhury."
-
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                            <button data-modal-hide="staticModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><a href="https://www.facebook.com/iraj.chowdhury.54">Add Friend</a></button>
-                            <button data-modal-hide="staticModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-  
-            <!-- <a
-              href="./from.html"
-              class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
-              >Message</a
-            > -->
+                                          
+                                      </p>
+                                      <img src="./img/8.jpg" alt="">
+                                      <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                          In the world of martial arts, Iraj Chowdhury is a true martial artist mastering three distinct karate styles: Fighter karate, Sito ryu, and Wadokai. Their journey in martial arts has been enriched by completing the Coach seminar under the esteemed guidance of Nepali grandmaster T.S. Rai, earning a Blackbelt from the Bangladesh Karate Federation, and excelling as a kumite instructor. They have also participated in Karate Referee and Judge seminars under the Bangladesh Karate Federation.
             
-            <!-- drawer init and show -->
-            <div class="text-center">
-                <button class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 type="button" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact" aria-controls="drawer-contact">
-                 Contact Me
-                </button>
-            </div>
+                                          
+                                      </p>
+                                      <img src="./img/5.jpg" alt="">
+                                      <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                          With six years of dedicated involvement in the karate world, Iraj Chowdhury has achieved significant success. Their approach to training reflects the importance of discipline, hard work, and dedication. Their skills in self-defense instill confidence, focus, and mental clarity, which they use to help others achieve their goals.
             
-            <!-- drawer component -->
-            <div id="drawer-contact" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-contact-label">
-                <h5 id="drawer-label" class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400"><svg class="w-4 h-4 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
-                <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
-                <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
-            </svg>Contact us</h5>
-                <button type="button" data-drawer-hide="drawer-contact" aria-controls="drawer-contact" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
-                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                </svg>
-                <span class="sr-only">Close menu</span>
-                </button>
-                <form  action="https://formspree.io/f/xwkdqoew"  method="POST"  class="mb-6">
-                <div class="mb-6">
-                    <label for="fname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
-                    <input type="text" id="fname" name="fname" required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Iraj" required>
-                </div>
-                <div class="mb-6">
-                    <label for="lname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lest Name</label>
-                    <input type="text" id="fname" name="lname" required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Chowdhury" required>
-                </div>
-                <div class="mb-6">
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                    <input type="email" id="email" required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required>
-                </div>
-                <div class="mb-6">
-                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
-                    <input type="text" id="subject" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Let us know how we can help you" required>
-                </div>
-                <div class="mb-6">
-                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
-                    <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
-                </div>
-                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block">Send message</button>
-                </form>
-                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                <a href="#" class="hover:underline">info@company.com</a>
-                </p>
-                <p class="text-sm text-gray-500 dark:text-gray-400">
-                <a href="#" class="hover:underline">212-456-7890</a>
-                </p>
-            </div>
- 
+                                          
+                                      </p>
+                                      <img src="./img/3.jpg" alt="">
+                                      <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                          As a fitness trainer, Iraj Chowdhury understands the vital role of physical fitness in a healthy lifestyle. Using their knowledge and expertise, they create personalized fitness plans tailored to each client's unique needs and abilities.
+            
+                                          
+                                      </p>
+                                      <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                          Furthermore, Iraj Chowdhury is a natural leader who inspires and motivates others to be their best selves, leading by example. Their contagious work ethic and dedication create a positive influence. Their unique storytelling and listening skills foster meaningful relationships.
+            
+                                          
+                                      </p>
+                                      
+                                      <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                          In summary, Iraj Chowdhury is a multifaceted individual with a unique set of skills and qualities that set them apart. They are a Mumin, a business-minded entrepreneur, and a highly skilled martial artist mastering three distinct karate styles. Their dedication to continuous learning and improvement is evident through their various achievements, including their role as a kumite instructor. If you seek someone to help you achieve your goals and embody excellence in various domains, look no further than Iraj Chowdhury."
+            
+                                      </p>
+                                  </div>
+                                  <!-- Modal footer -->
+                                  <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                      <button data-modal-hide="staticModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Close</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+            
           </div>
         </div>
+      </section>
+
+      <!-- all img card code  -->
+      <section class="my-[50px]">
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="grid gap-4">
+              <div>
+                  <img class="h-[100%] max-w-full rounded-lg" src="./img/1.jpg" alt="">
+              </div>
+              <div>
+                  <img class="h-[100%] max-w-full rounded-lg" src="./img/2.jpg" alt="">
+              </div>
+              <div>
+                  <img class="h-[100%] max-w-full rounded-lg" src="./img/3.jpg" alt="">
+              </div>
+          </div>
+          <div class="grid gap-4">
+              <div>
+                  <img class=" h-[100%] max-w-full rounded-lg" src="./img/4.jpg" alt="">
+              </div>
+              <div>
+                  <img class="h-[100%] max-w-full rounded-lg" src="./img/5.jpg" alt="">
+              </div>
+              <div>
+                  <img class="h-[100%] max-w-full rounded-lg" src="./img/6.jpg" alt="">
+              </div>
+          </div>
+          <div class="grid gap-4">
+              <div>
+                  <img class="h-[100%] max-w-full rounded-lg" src="./img/7.jpg" alt="">
+              </div>
+              <div>
+                  <img class="h-[100%] max-w-full rounded-lg" src="./img/8.jpg" alt="">
+              </div>
+              <div>
+                  <img class="h-[100%] max-w-full rounded-lg" src="./img/9.jpg" alt="">
+              </div>
+          </div>
+          <div class="grid gap-4">
+              <div>
+                  <img class="h-[100%] max-w-full rounded-lg" src="./img/10.jpg" alt="">
+              </div>
+              <div>
+                  <img class="h-[100%] max-w-full rounded-lg" src="./img/394446541_883390566209792_2181693534365781010_n.jpg" alt="">
+              </div>
+              <div>
+                  <img class="h-[100%] max-w-full rounded-lg" src="./img/394755156_1647042302487061_690612489228481624_n.jpg" alt="">
+              </div>
+          </div>
+        </div>
+
+      </section>
+     </section><hr>
+
+
+     <section id="contact">
+      <h1 id="contact" class="text-4xl text-center my-[30px]">Thanks for taking the time to reach out. <br> How can I help you today?</h1>
+      <div>
+        
+        <form  action="https://formspree.io/f/xwkdqoew" class="">
+          <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+            </div>
+          </div>
+          <div class="relative z-0 w-full mb-6 group">
+              <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+              <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+          </div>
+          
+        
+          <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{5}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (0123-456-7890)</label>
+            </div><br>
+            <div class="relative z-0 w-full mb-6 group">
+               
+              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+              <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+
+            </div>
+          </div>
+          <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+        </form>
       </div>
+      <div>
+        <img
+          class=" hidden lg:block  lg:mt-[-19rem] lg:ml-[65rem] rounded-lg shadow-xl dark:shadow-gray-800"
+          src="./img/1694721178747-removebg-preview.png"
+          alt=""
+        />
+      </div>
+     </section>
+
+
     </main>
+
+   <!-- all footer content and style  -->
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 ">
+      <div class="w-full  mx-auto p-4 md:py-8 border border-dashed border-green-500	">
+          <div class="sm:flex sm:items-center sm:justify-around ">
+            <a href="index.html" class="flex sm:mb-[20px] items-center">
+              <img src="./img/logo.jpg" class="h-8" alt="Flowbite Logo" />
+              <span
+                class="self-center text-base lg:text-2xl text-emerald-500 font-semibold whitespace-nowrap dark:text-white"
+                >Iraj<span class="text-black">Chowdhury</span></span
+              >
+            </a>
+              <ul class="flex flex-wrap items-center m-[16px] text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                  <li>
+                      <a href="https://www.facebook.com/iraj.chowdhury.54" target="_blank" class="mr-4 hover:underline md:mr-6 "> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="facebook"><path fill="#1976D2" d="M14 0H2C.897 0 0 .897 0 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V2c0-1.103-.897-2-2-2z"></path><path fill="#FAFAFA" fill-rule="evenodd" d="M13.5 8H11V6c0-.552.448-.5 1-.5h1V3h-2a3 3 0 0 0-3 3v2H6v2.5h2V16h3v-5.5h1.5l1-2.5z" clip-rule="evenodd"></path></svg> </a>
+                  </li>
+                  <li class="mx-[10px]">
+                      <a href="https://www.linkedin.com/in/iraj-chowdhury-b1281b263/" target="_blank" class="mr-4 hover:underline md:mr-6"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 128 128" id="linkedin"><path fill="#0177b5" d="M104 8a16 16 0 0 1 16 16v80a16 16 0 0 1-16 16H24a16 16 0 0 1-16-16V24A16 16 0 0 1 24 8h80m0-8H24A24.07 24.07 0 0 0 0 24v80a24.07 24.07 0 0 0 24 24h80a24.07 24.07 0 0 0 24-24V24a24.07 24.07 0 0 0-24-24Z"></path><path fill="#0177b5" d="M92 32H36a4 4 0 0 0-4 4v56a4 4 0 0 0 4 4h56a4 4 0 0 0 4-4V36a4 4 0 0 0-4-4ZM52 86H42V56h10Zm-5-34a6 6 0 1 1 6-6 6 6 0 0 1-6 6Zm39 34H76V66c0-1.66-2.24-3-5-3-4 0-5 5.34-5 7v16H56V56h10v7c0-5 4.48-7 10-7a10 10 0 0 1 10 10Z"></path></svg></a>
+                  </li>
+                  <li>
+                      <a href="https://www.youtube.com/channel/UCEHmnXU8NTzZI7x1j7US1yw" target="_blank" class="mr-4 hover:underline md:mr-6 "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="youtube"><g fill-rule="evenodd" clip-rule="evenodd"><path fill="#F44336" d="M15.32 4.06c-.434-.772-.905-.914-1.864-.968C12.498 3.027 10.089 3 8.002 3c-2.091 0-4.501.027-5.458.091-.957.055-1.429.196-1.867.969C.23 4.831 0 6.159 0 8.497v.008c0 2.328.23 3.666.677 4.429.438.772.909.912 1.866.977.958.056 3.368.089 5.459.089 2.087 0 4.496-.033 5.455-.088.959-.065 1.43-.205 1.864-.977.451-.763.679-2.101.679-4.429v-.008c0-2.339-.228-3.667-.68-4.438z"></path><path fill="#FAFAFA" d="M6 11.5v-6l5 3z"></path></g></svg></a>
+                  </li>
+                  <li class="mx-[10px]">
+                      <a href="https://www.instagram.com/iraj_chowdhury?igshid=OGY3MTU3OGY1Mw%3D%3D" target="_blank" class="mr-4 hover:underline md:mr-6 "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="instagram"><linearGradient id="a" x1="1.464" x2="14.536" y1="14.536" y2="1.464" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFC107"></stop><stop offset=".507" stop-color="#F44336"></stop><stop offset=".99" stop-color="#9C27B0"></stop></linearGradient><path fill="url(#a)" d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z"></path><linearGradient id="b" x1="5.172" x2="10.828" y1="10.828" y2="5.172" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFC107"></stop><stop offset=".507" stop-color="#F44336"></stop><stop offset=".99" stop-color="#9C27B0"></stop></linearGradient><path fill="url(#b)" d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z"></path><linearGradient id="c" x1="11.923" x2="12.677" y1="4.077" y2="3.323" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFC107"></stop><stop offset=".507" stop-color="#F44336"></stop><stop offset=".99" stop-color="#9C27B0"></stop></linearGradient><circle cx="12.3" cy="3.7" r=".533" fill="url(#c)"></circle></svg></a>
+                  </li>
+                  
+              </ul>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">by Iraj-Chowdhury™</a>. All Rights Reserved .</span>
+      </div>
+    </footer>
+
+
+
+    <!-- js flowbite and others js  link  -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      let typed = new Typed(".auto-type", {
+        strings: [
+          "Iraj-Chowdhury",
+          "Inspiring Excellence Through Faith,",
+          "Business,",
+          "and Martial Arts",
+        ],
+        typeSpeed: 110,
+        backSpeed: 200,
+        loop: true,
+      });
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-    
   </body>
 </html>
